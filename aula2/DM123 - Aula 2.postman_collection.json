@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "3f93122f-ff51-4c5c-9de6-bdfddc55e696",
+		"name": "DM123 - Aula 2",
+		"description": "Collections usadas na aula 2 - Banco de Dados.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://cluster-01-lb-1926690724.us-east-1.elb.amazonaws.com:8080/api/products",
+					"protocol": "http",
+					"host": [
+						"cluster-01-lb-1926690724",
+						"us-east-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products"
+					]
+				},
+				"description": "http://cluster-01-lb-1926690724.us-east-1.elb.amazonaws.com:8080/api/products"
+			},
+			"response": []
+		},
+		{
+			"name": "Create new product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Cafeteira\",\n    \"model\": \"Prensa francesa\",\n    \"code\": \"12209\",\n    \"price\": 29.49\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://cluster-01-lb-1926690724.us-east-1.elb.amazonaws.com:8080/api/products",
+					"protocol": "http",
+					"host": [
+						"cluster-01-lb-1926690724",
+						"us-east-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products"
+					]
+				},
+				"description": "http://cluster-01-lb-1926690724.us-east-1.elb.amazonaws.com:8080/api/products"
+			},
+			"response": []
+		},
+		{
+			"name": "Get product by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://cluster-01-lb-1926690724.us-east-1.elb.amazonaws.com:8080/api/products/2",
+					"protocol": "http",
+					"host": [
+						"cluster-01-lb-1926690724",
+						"us-east-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						"2"
+					]
+				},
+				"description": "http://cluster-01-lb-1926690724.us-east-1.elb.amazonaws.com:8080/api/products/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Update product by id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"name\": \"Cafeteira\",\r\n    \"model\": \"Prensa francesa nova\",\r\n    \"code\": \"12209\",\r\n    \"price\": 29.49\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://cluster-01-lb-1926690724.us-east-1.elb.amazonaws.com:8080/api/products/2",
+					"protocol": "http",
+					"host": [
+						"cluster-01-lb-1926690724",
+						"us-east-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						"2"
+					]
+				},
+				"description": "http://cluster-01-lb-1926690724.us-east-1.elb.amazonaws.com:8080/api/products/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete product by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://cluster-01-lb-1926690724.us-east-1.elb.amazonaws.com:8080/api/products/2",
+					"protocol": "http",
+					"host": [
+						"cluster-01-lb-1926690724",
+						"us-east-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						"2"
+					]
+				},
+				"description": "http://cluster-01-lb-1926690724.us-east-1.elb.amazonaws.com:8080/api/products/2"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
