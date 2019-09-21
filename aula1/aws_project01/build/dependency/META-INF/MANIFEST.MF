@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Start-Class: br.com.siecola.aws_project01.AwsProject01Application
+Main-Class: org.springframework.boot.loader.JarLauncher
+
