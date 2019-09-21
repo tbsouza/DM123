@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "35e2c678-5d6b-4ffa-9c9d-8b6f437c1f75",
+		"name": "DM123",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/actuator/health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/actuator/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"actuator",
+						"health"
+					]
+				},
+				"description": "Test if the application is up."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/test/dog/Bolinha",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/test/dog/Bolinha",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"test",
+						"dog",
+						"Bolinha"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dog name AWS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://cluster-01-lb-1926690724.us-east-1.elb.amazonaws.com:8080/api/test/dog/matilde",
+					"protocol": "http",
+					"host": [
+						"cluster-01-lb-1926690724",
+						"us-east-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"test",
+						"dog",
+						"matilde"
+					]
+				},
+				"description": "http://cluster-01-lb-1926690724.us-east-1.elb.amazonaws.com:8080/api/test/dog/matilde"
+			},
+			"response": []
+		},
+		{
+			"name": "Dog color AWS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://cluster-01-lb-1926690724.us-east-1.elb.amazonaws.com:8080/api/test/dogcolor/caramelo",
+					"protocol": "http",
+					"host": [
+						"cluster-01-lb-1926690724",
+						"us-east-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"test",
+						"dogcolor",
+						"caramelo"
+					]
+				},
+				"description": "http://cluster-01-lb-1926690724.us-east-1.elb.amazonaws.com:8080/api/test/dogcolor/caramelo"
+			},
+			"response": []
+		}
+	]
+}
